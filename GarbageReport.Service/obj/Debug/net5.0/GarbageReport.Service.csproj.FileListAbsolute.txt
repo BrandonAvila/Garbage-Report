@@ -1,0 +1,12 @@
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\bin\Debug\net5.0\GarbageReport.Service.deps.json
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\bin\Debug\net5.0\GarbageReport.Service.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\bin\Debug\net5.0\ref\GarbageReport.Service.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\bin\Debug\net5.0\GarbageReport.Service.pdb
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\ref\GarbageReport.Service.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage_Report\GarbageReport.Service\obj\Debug\net5.0\GarbageReport.Service.pdb

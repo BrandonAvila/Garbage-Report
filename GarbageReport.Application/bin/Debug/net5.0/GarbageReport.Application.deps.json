@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "GarbageReport.Application/1.0.0": {
+        "dependencies": {
+          "GarbageReport.Domain": "1.0.0",
+          "GarbageReport.Infraestructure": "1.0.0"
+        },
+        "runtime": {
+          "GarbageReport.Application.dll": {}
+        }
+      },
+      "GarbageReport.Domain/1.0.0": {
+        "runtime": {
+          "GarbageReport.Domain.dll": {}
+        }
+      },
+      "GarbageReport.Infraestructure/1.0.0": {
+        "dependencies": {
+          "GarbageReport.Domain": "1.0.0"
+        },
+        "runtime": {
+          "GarbageReport.Infraestructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GarbageReport.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GarbageReport.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GarbageReport.Infraestructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

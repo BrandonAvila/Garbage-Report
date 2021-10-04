@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "GarbageReport.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/GarbageReport.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GarbageReport.Domain.dll": {}
+        }
+      },
+      "GarbageReport.Infraestructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "GarbageReport.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GarbageReport.Infraestructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GarbageReport.Infraestructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GarbageReport.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GarbageReport.Domain/GarbageReport.Domain.csproj",
+      "msbuildProject": "../GarbageReport.Domain/GarbageReport.Domain.csproj"
+    },
+    "GarbageReport.Infraestructure/1.0.0": {
+      "type": "project",
+      "path": "../GarbageReport.Infraestructure/GarbageReport.Infraestructure.csproj",
+      "msbuildProject": "../GarbageReport.Infraestructure/GarbageReport.Infraestructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "GarbageReport.Domain >= 1.0.0",
+      "GarbageReport.Infraestructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
+      "projectName": "GarbageReport.Application",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
+            },
+            "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

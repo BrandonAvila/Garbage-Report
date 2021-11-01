@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using GarbageReport.Infraestructure.Data;
 
 namespace GarbageReport.Api
 {
@@ -32,7 +35,9 @@ namespace GarbageReport.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GarbageReport.Api", Version = "v1" });
             });
-        }
+            services.AddDbContext<GarbageReportContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("Data Source=GarbageReport.mssql.somee.com;Initial Catalog=GarbageReport;Persist Security Info=False;User ID=Brandon218_SQLLogin_2;Password=xd1tuyof7x")));
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

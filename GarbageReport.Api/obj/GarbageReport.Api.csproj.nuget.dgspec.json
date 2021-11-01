@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Api\\GarbageReport.Api.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Api\\GarbageReport.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Api\\GarbageReport.Api.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Api\\GarbageReport.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Api\\GarbageReport.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Api\\GarbageReport.Api.csproj",
         "projectName": "GarbageReport.Api",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Api\\GarbageReport.Api.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Api\\GarbageReport.Api.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Api\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\GarbageReport.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\GarbageReport.Application.csproj"
               },
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
               }
             }
           }
@@ -51,6 +51,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -74,18 +88,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\GarbageReport.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
         "projectName": "GarbageReport.Application",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\GarbageReport.Application.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Application\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,11 +120,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
               },
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj"
               }
             }
           }
@@ -124,6 +138,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -139,18 +169,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj",
         "projectName": "GarbageReport.Domain",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -182,6 +212,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -197,18 +243,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
         "projectName": "GarbageReport.Infraestructure",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -229,8 +275,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage_Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
               }
             }
           }
@@ -244,6 +290,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -259,7 +321,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

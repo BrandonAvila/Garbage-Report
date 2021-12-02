@@ -30,4 +30,4 @@ C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.infra
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.infraestructure\bin\Debug\net5.0\GarbageReport.infraestructure.runtimeconfig.json
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.infraestructure\bin\Debug\net5.0\GarbageReport.infraestructure.runtimeconfig.dev.json
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.infraestructure\obj\Debug\net5.0\GarbageReport.infraestructure.genruntimeconfig.cache
-C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Infraestructure\obj\Debug\net5.0\GarbageReport.Infraestructure.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.infraestructure\obj\Debug\net5.0\GarbageReport.infraestructure.csproj.CopyComplete

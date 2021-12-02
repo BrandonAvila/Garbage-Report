@@ -99,3 +99,7 @@ C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\o
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\ref\GarbageReport.Api.dll
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.pdb
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\bin\Debug\net5.0\FluentValidation.dll

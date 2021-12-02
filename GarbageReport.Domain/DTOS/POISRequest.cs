@@ -4,5 +4,5 @@ using System;
 
 namespace GarbageReport.Domain.DTOS
 {
-    public record POISRequest(DateTime Fecha);
+    public record POISRequest(string Fecha);
 }

@@ -35,8 +35,8 @@
               "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj": {
                 "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Domain\\GarbageReport.Domain.csproj"
               },
-              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj"
               }
             }
           }
@@ -51,6 +51,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -81,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -125,6 +133,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -155,18 +171,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
-        "projectName": "GarbageReport.Infraestructure",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj",
+        "projectName": "GarbageReport.infraestructure",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -203,6 +219,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -233,7 +257,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

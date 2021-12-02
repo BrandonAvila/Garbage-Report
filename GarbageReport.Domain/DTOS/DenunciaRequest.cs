@@ -4,5 +4,5 @@ using System;
 
 namespace GarbageReport.Domain.DTOS
 {
-    public record DenunciasRequest(DateTime FechadeDenuncia);
+    public record DenunciasRequest(string FechadeDenuncia);
 }

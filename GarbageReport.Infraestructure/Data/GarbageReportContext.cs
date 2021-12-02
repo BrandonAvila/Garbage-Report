@@ -22,14 +22,14 @@ namespace GarbageReport.Infraestructure.Data
         public virtual DbSet<Evento> Eventos { get; set; }
         public virtual DbSet<Poi> Pois { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=GarbageReport.mssql.somee.com;Initial Catalog=GarbageReport;Persist Security Info=False;User ID=Brandon218_SQLLogin_2;Password=xd1tuyof7x");
             }
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,19 +37,26 @@ namespace GarbageReport.Infraestructure.Data
 
             modelBuilder.Entity<Denuncia>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.IdDenuncia)
+                    .HasName("PK_Denuncias");
 
                 entity.Property(e => e.ColoniadelEvento)
+                    .IsRequired()
                     .HasMaxLength(600)
                     .IsUnicode(false);
 
                 entity.Property(e => e.DescripciondeSituacion)
+                    .IsRequired()
                     .HasMaxLength(600)
                     .IsUnicode(false);
 
-                entity.Property(e => e.FechadeDenuncia).HasColumnType("date");
+                entity.Property(e => e.FechadeDenuncia)
+                    .IsRequired()
+                    .HasMaxLength(600)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.FotografiadelLugar)
+                    .IsRequired()
                     .HasMaxLength(600)
                     .IsUnicode(false);
 
@@ -71,12 +78,12 @@ namespace GarbageReport.Infraestructure.Data
 
                 entity.Property(e => e.CaracteristicasdelEvento)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(400)
                     .IsFixedLength(true);
 
                 entity.Property(e => e.ConsideracionesEspeciales)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(60)
                     .IsFixedLength(true);
 
                 entity.Property(e => e.DescripciondelEvento)
@@ -84,23 +91,29 @@ namespace GarbageReport.Infraestructure.Data
                     .HasMaxLength(600)
                     .IsFixedLength(true);
 
-                entity.Property(e => e.FechadelEvento).HasColumnType("datetime");
+                entity.Property(e => e.FechadelEvento)
+                    .HasMaxLength(60)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.NdpersonasRequeridas).HasColumnName("NDPersonasRequeridas");
+                entity.Property(e => e.NdpersonasRequeridas)
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.NombredelEvento)
                     .IsRequired()
                     .HasMaxLength(600)
                     .IsFixedLength(true);
+                    
+                entity.Property(e => e.IdEventos).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Patrocinadores)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(60)
                     .IsFixedLength(true);
 
                 entity.Property(e => e.UbicaciondelEvento)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(60)
                     .IsFixedLength(true);
             });
 
@@ -113,7 +126,7 @@ namespace GarbageReport.Infraestructure.Data
 
                 entity.Property(e => e.Caracteristicas)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(200)
                     .IsFixedLength(true);
 
                 entity.Property(e => e.Descripcion)
@@ -121,16 +134,26 @@ namespace GarbageReport.Infraestructure.Data
                     .HasMaxLength(600)
                     .IsFixedLength(true);
 
-                entity.Property(e => e.Fecha).HasColumnType("date");
+                entity.Property(e => e.Fecha)
+                    .IsRequired()
+                    .HasMaxLength(60)
+                    .IsFixedLength(true);
+                                    
+                entity.Property(e => e.Hora)
+                    .IsRequired()
+                    .HasMaxLength(60)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.IdPois).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(60)
                     .IsFixedLength(true);
 
                 entity.Property(e => e.Ubicacion)
                     .IsRequired()
-                    .HasMaxLength(600)
+                    .HasMaxLength(60)
                     .IsFixedLength(true);
             });
 

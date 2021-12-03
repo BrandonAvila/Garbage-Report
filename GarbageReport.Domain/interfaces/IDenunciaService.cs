@@ -9,6 +9,6 @@ namespace GarbageReport.Domain.interfaces
     public interface IDenunciaService
     {
         bool Validated (Denuncia denuncia);
-        bool ValidatedUpdate(Denuncia denuncia);
+        //bool ValidatedUpdate(Denuncia denuncia);
     }
 }

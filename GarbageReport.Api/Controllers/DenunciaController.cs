@@ -68,7 +68,7 @@ namespace GarbageReport.Api.Controllers
             return Ok(respuesta);
         }
 
-        [HttpPut]
+        /*[HttpPut]
         [Route("{id:int}")]
         public async Task<IActionResult> Update (int id,[FromBody]Denuncia denuncia)
         {
@@ -88,7 +88,7 @@ namespace GarbageReport.Api.Controllers
                 Conflict("Ocurrio un fallo al intentar actualizar la denuncia.");
             
             return NoContent();
-        }
+        }*/
 
         [HttpPost]
         

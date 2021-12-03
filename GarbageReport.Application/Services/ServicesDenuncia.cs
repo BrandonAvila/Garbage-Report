@@ -33,7 +33,7 @@ namespace GarbageReport.Application.Services
             return true;
         }
 
-        public bool ValidatedUpdate (Denuncia denuncia)
+        /*public bool ValidatedUpdate (Denuncia denuncia)
         {
             if(denuncia.IdDenuncia <= 0)
                 return false;
@@ -57,6 +57,6 @@ namespace GarbageReport.Application.Services
                 return false;
 
             return true;
-        }
+        }*/
     }
 }

@@ -47,7 +47,7 @@ namespace GarbageReport.Infraestructure.Repositories
         }
 
         //Actualizar denuncia
-        public async Task<bool> Update(int id, Denuncia denuncia)
+        /*public async Task<bool> Update(int id, Denuncia denuncia)
         {
             if(id <= 0 || denuncia == null)
                 throw new ArgumentException("Falta informacion para poder realizar la modificacion");
@@ -67,7 +67,7 @@ namespace GarbageReport.Infraestructure.Repositories
 
             var rows = await _context.SaveChangesAsync();
             return rows > 0;
-        }
+        }*/
 
     }
 }

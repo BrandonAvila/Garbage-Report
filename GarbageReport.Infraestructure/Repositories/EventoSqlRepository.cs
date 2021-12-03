@@ -59,7 +59,6 @@ namespace GarbageReport.Infraestructure.Repositories
             entity.Patrocinadores = evento.Patrocinadores;
             entity.ConsideracionesEspeciales = evento.ConsideracionesEspeciales;
 
-        
             _context.Update(entity);
 
             var rows = await _context.SaveChangesAsync();

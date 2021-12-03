@@ -17,6 +17,18 @@ using GarbageReport.Domain.interfaces;
 using AutoMapper;
 using FluentValidation;
 
+/*Nombre de la escuela: Universidad Tecnologica Metropolitana
+Asignatura: Aplicaciones Web Orientadas a Servicios
+Nombre del Maestro: Chuc Uc Joel Ivan
+Nombre del Proyecto: Garbage Report
+Integrantes:
+- Avila Ramayo Brandon Jefte
+- Paredes Ayala Guillermo Aldair
+- Lopez Canul Joatan de Jesus
+Cuatrimestre: 4
+Grupo: B
+Parcial: 2
+*/
 
 namespace GarbageReport.Api.Controllers
 {

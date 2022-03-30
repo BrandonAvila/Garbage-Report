@@ -27,7 +27,7 @@ Integrantes:
 - Lopez Canul Joatan de Jesus
 Cuatrimestre: 4
 Grupo: B
-Parcial: 2
+Parcial: 3
 */
 
 namespace GarbageReport.Api.Controllers

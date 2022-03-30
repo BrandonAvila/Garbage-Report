@@ -17,7 +17,7 @@ namespace GarbageReport.Application.Mappings
             CreateMap<Denuncia, DenunciaResponses>()
 
             .ForMember(dest => dest.InformacionDen, opt => opt.MapFrom(src => $"El motivo fue: {src.MotivodeDenuncia} y se registro en la fecha: {src.FechadeDenuncia}"))
-            .ForMember(dest => dest.LugarDen, opt => opt.MapFrom(src => $"Ubicado en: {src.UbicaciondeDenuncia} en la colonia: {src.ColoniadelEvento}"));
+            .ForMember(dest => dest.LugarDen, opt => opt.MapFrom(src => $"Ubicado en: {src.UbicaciondeDenuncia}"));
 
             CreateMap<DenunciaCreateRequest, Denuncia>();
         }

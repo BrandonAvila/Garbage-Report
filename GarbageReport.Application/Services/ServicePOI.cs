@@ -18,9 +18,6 @@ namespace GarbageReport.Application.Services
             if(string.IsNullOrEmpty(poi.Descripcion))
                 return false;
 
-            if(string.IsNullOrEmpty(poi.Ubicacion))
-                return false;
-
             if(string.IsNullOrEmpty(poi.Fecha))
                 return false;
 
@@ -42,9 +39,6 @@ namespace GarbageReport.Application.Services
                 return false;
 
             if(string.IsNullOrEmpty(poi.Descripcion))
-                return false;
-
-            if(string.IsNullOrEmpty(poi.Ubicacion))
                 return false;
 
             if(string.IsNullOrEmpty(poi.Fecha))

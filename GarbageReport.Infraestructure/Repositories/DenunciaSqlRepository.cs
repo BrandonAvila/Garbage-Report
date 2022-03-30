@@ -20,7 +20,7 @@ namespace GarbageReport.Infraestructure.Repositories
 
         public async Task<IEnumerable<Denuncia>> TodosLosDatos()
         {
-            var denuncia = _context.Denuncias.Select(dn => dn);
+            var denuncia = _context.Denuncia.Select(dn => dn);
             return await denuncia.ToListAsync();
         }
 
@@ -28,7 +28,7 @@ namespace GarbageReport.Infraestructure.Repositories
         //Obtener por ID
         public async Task<Denuncia> PorID(int id)
         {
-            var denuncia = await _context.Denuncias.FirstOrDefaultAsync(dn => dn.IdDenuncia == id);
+            var denuncia = await _context.Denuncia.FirstOrDefaultAsync(dn => dn.IdDenuncia == id);
             return denuncia;
         }
 
@@ -37,7 +37,7 @@ namespace GarbageReport.Infraestructure.Repositories
         public async Task<int> create(Denuncia denuncia)
         {
             var entity = denuncia;
-            await _context.Denuncias.AddAsync(entity);
+            await _context.Denuncia.AddAsync(entity);
             var rows = await _context.SaveChangesAsync();
 
             if(rows <= 0)
@@ -54,12 +54,11 @@ namespace GarbageReport.Infraestructure.Repositories
 
             var entity = await PorID(id);
 
-            entity.FechadeDenuncia = denuncia.FechadeDenuncia;
+            entity.TitulodeDenuncia = denuncia.TitulodeDenuncia;
             entity.MotivodeDenuncia = denuncia.MotivodeDenuncia;
-            entity.DescripciondeSituacion = denuncia.DescripciondeSituacion;
-            entity.UbicaciondeDenuncia = denuncia.UbicaciondeDenuncia;
-            entity.ColoniadelEvento = denuncia.ColoniadelEvento;
+            entity.FechadeDenuncia = denuncia.FechadeDenuncia;
             entity.FotografiadelLugar = denuncia.FotografiadelLugar;
+            entity.UbicaciondeDenuncia = denuncia.UbicaciondeDenuncia;
 
             
 
@@ -69,5 +68,15 @@ namespace GarbageReport.Infraestructure.Repositories
             return rows > 0;
         }
 
+        public void EliminarDenuncia(int id)
+        {
+            var Eliminar = _context.Denuncia.FirstOrDefault(i => i.IdDenuncia == id);
+
+            if(Eliminar!=null)
+            {
+                _context.Denuncia.Remove(Eliminar);
+                _context.SaveChanges();
+            }
+        }
     }
 }

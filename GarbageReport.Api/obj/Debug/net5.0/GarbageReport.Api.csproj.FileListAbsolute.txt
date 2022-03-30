@@ -92,7 +92,6 @@ C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\o
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\staticwebassets\GarbageReport.Api.StaticWebAssets.Manifest.cache
-C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\staticwebassets\GarbageReport.Api.StaticWebAssets.xml
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\scopedcss\bundle\GarbageReport.Api.styles.css
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.RazorTargetAssemblyInfo.cache
 C:\Users\Usuario\Desktop\Tareas\APWOS\Parcial\Garbage-Report\GarbageReport.Api\obj\Debug\net5.0\GarbageReport.Api.dll

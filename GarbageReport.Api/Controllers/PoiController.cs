@@ -103,7 +103,7 @@ namespace GarbageReport.Api.Controllers
 
             var host = _httpContext.HttpContext.Request.Host.Value;
             var urlResult = $"https://{host}/api/Eventos/{id}";
-            return Created(urlResult, id);
+            return Ok(poi);
         }
 
         [HttpPut]
@@ -125,6 +125,15 @@ namespace GarbageReport.Api.Controllers
             if(!updated)
                 Conflict("Ocurrio un fallo al intentar actualizar la denuncia.");
             
+            return Ok(poi);
+        }
+
+        [HttpDelete]
+        [Route("EliminarPOI/{id:int}")]
+        public IActionResult EliminarPOI(int id)
+        {
+            _repository.EliminarPOI(id);
+
             return NoContent();
         }
 

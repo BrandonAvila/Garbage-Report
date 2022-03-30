@@ -16,7 +16,7 @@ namespace GarbageReport.Application.Mappings
             CreateMap<Poi, POIResponses>()
 
             .ForMember(dest => dest.Informacion_POI, opt => opt.MapFrom(src => $"El nombre del POI es: {src.Nombre} breve descripcion:  {src.Descripcion}"))
-            .ForMember(dest => dest.Lugar_y_Fecha, opt => opt.MapFrom(src => $"Ubicado en: {src.Ubicacion} registrado el dia: {src.Fecha}"));
+            .ForMember(dest => dest.Lugar_y_Fecha, opt => opt.MapFrom(src => $"Registrado el dia: {src.Fecha}"));
 
             CreateMap<POICreateRequest, Poi>();
         }

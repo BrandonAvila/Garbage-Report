@@ -55,18 +55,26 @@ namespace GarbageReport.Infraestructure.Repositories
             var entity = await PorID(id);
 
             entity.Nombre = poi.Nombre;
+            entity.Caracteristicas = poi.Caracteristicas;
             entity.Descripcion = poi.Descripcion;
-            entity.Ubicacion = poi.Ubicacion;
             entity.Fecha = poi.Fecha;
             entity.Hora = poi.Hora;
-            entity.Caracteristicas = poi.Caracteristicas;
-
-            
 
             _context.Update(entity);
 
             var rows = await _context.SaveChangesAsync();
             return rows > 0;
+        }
+
+        public void EliminarPOI(int id)
+        {
+            var Eliminar = _context.Pois.FirstOrDefault(i => i.IdPois == id);
+
+            if(Eliminar!=null)
+            {
+                _context.Pois.Remove(Eliminar);
+                _context.SaveChanges();
+            }
         }
     }
 }

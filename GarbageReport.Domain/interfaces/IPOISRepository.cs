@@ -12,5 +12,6 @@ namespace GarbageReport.Domain.interfaces
         Task<Poi> PorID(int id);
         Task<int> create(Poi poi);
         Task<bool> Update(int id, Poi poi);
+        void EliminarPOI(int id);
     }
 }

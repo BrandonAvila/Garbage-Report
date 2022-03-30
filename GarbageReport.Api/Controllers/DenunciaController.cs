@@ -42,12 +42,12 @@ namespace GarbageReport.Api.Controllers
         private readonly IDenunciaService _service;
         private readonly IValidator<DenunciaCreateRequest> _createValidator;
 
-        public DenunciaController(IDenunciaRepository repository, 
-        IHttpContextAccessor httpContext, 
-        IMapper mapper, 
-        IDenunciaService service, 
+        public DenunciaController(IDenunciaRepository repository,
+        IHttpContextAccessor httpContext,
+        IMapper mapper,
+        IDenunciaService service,
         IValidator<DenunciaCreateRequest> createValidator)
-        
+
         {
             this._repository = repository;
             this._httpContext = httpContext;
@@ -85,27 +85,27 @@ namespace GarbageReport.Api.Controllers
         {
             if(id <= 0)
                 return NotFound("No se encontro el regsitro de la denuncia.");
-            
+
             denuncia.IdDenuncia = id;
 
             var Validated = _service.ValidatedUpdate(denuncia);
 
             if(!Validated)
                 UnprocessableEntity("No es posible actualizar la informacion.");
-            
+
             var updated = await _repository.Update(id, denuncia);
 
             if(!updated)
                 Conflict("Ocurrio un fallo al intentar actualizar la denuncia.");
-            
-            return NoContent();
+
+            return Ok(denuncia);
         }
 
         [HttpPost]
-        
+
         public async Task<IActionResult> create(DenunciaCreateRequest denuncia)
         {
-            
+
             var Val = await _createValidator.ValidateAsync(denuncia);
 
            // var Val = _service.Validated(entity);
@@ -116,13 +116,22 @@ namespace GarbageReport.Api.Controllers
             var entity = _mapper.Map<DenunciaCreateRequest, Denuncia>(denuncia);
 
             var id = await _repository.create(entity);
-            
+
             if(id <= 0)
                 return Conflict("Fallo el registro, intente de nuevo.");
 
             var host = _httpContext.HttpContext.Request.Host.Value;
             var urlResult = $"https://{host}/api/Denuncias/{id}";
-            return Created(urlResult, id);
+            return Ok(denuncia);
+        }
+
+        [HttpDelete]
+        [Route("EliminarDenuncia/{id:int}")]
+        public IActionResult EliminarDenuncia(int id)
+        {
+            _repository.EliminarDenuncia(id);
+
+            return NoContent();
         }
     }
 

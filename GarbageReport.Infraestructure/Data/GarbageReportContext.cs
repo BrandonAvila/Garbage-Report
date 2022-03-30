@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using GarbageReport.Domain.Entities; 
+using GarbageReport.Domain.Entities;
 
 #nullable disable
 
@@ -18,37 +18,37 @@ namespace GarbageReport.Infraestructure.Data
         {
         }
 
-        public virtual DbSet<Denuncia> Denuncias { get; set; }
+        public virtual DbSet<Ciudadano> Ciudadania { get; set; }
+        public virtual DbSet<Denuncia> Denuncia { get; set; }
         public virtual DbSet<Evento> Eventos { get; set; }
         public virtual DbSet<Poi> Pois { get; set; }
-
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=GarbageReport.mssql.somee.com;Initial Catalog=GarbageReport;Persist Security Info=False;User ID=Brandon218_SQLLogin_2;Password=xd1tuyof7x");
-            }
-        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
 
+            modelBuilder.Entity<Ciudadano>(entity =>
+            {
+                entity.HasKey(e => e.IdCiudadania)
+                    .HasName("pk_Ciudadania");
+
+                entity.Property(e => e.IdCiudadania).HasColumnName("idCiudadania");
+
+                entity.Property(e => e.Clave)
+                    .IsRequired()
+                    .HasMaxLength(60)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Correo)
+                    .IsRequired()
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<Denuncia>(entity =>
             {
                 entity.HasKey(e => e.IdDenuncia)
                     .HasName("PK_Denuncias");
-
-                entity.Property(e => e.ColoniadelEvento)
-                    .IsRequired()
-                    .HasMaxLength(600)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.DescripciondeSituacion)
-                    .IsRequired()
-                    .HasMaxLength(600)
-                    .IsUnicode(false);
 
                 entity.Property(e => e.FechadeDenuncia)
                     .IsRequired()
@@ -60,13 +60,18 @@ namespace GarbageReport.Infraestructure.Data
                     .HasMaxLength(600)
                     .IsUnicode(false);
 
-                entity.Property(e => e.IdDenuncia).ValueGeneratedOnAdd();
-
                 entity.Property(e => e.MotivodeDenuncia)
+                    .IsRequired()
+                    .HasMaxLength(600)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TitulodeDenuncia)
+                    .IsRequired()
                     .HasMaxLength(600)
                     .IsUnicode(false);
 
                 entity.Property(e => e.UbicaciondeDenuncia)
+                    .IsRequired()
                     .HasMaxLength(600)
                     .IsUnicode(false);
             });
@@ -74,87 +79,67 @@ namespace GarbageReport.Infraestructure.Data
             modelBuilder.Entity<Evento>(entity =>
             {
                 entity.HasKey(e => e.IdEventos)
-                    .HasName("PK__Eventos__E1DD9410B1E6F145");
+                    .HasName("PK__Eventos");
 
-                entity.Property(e => e.CaracteristicasdelEvento)
-                    .IsRequired()
-                    .HasMaxLength(400)
-                    .IsFixedLength(true);
+                entity.ToTable("Evento");
 
                 entity.Property(e => e.ConsideracionesEspeciales)
                     .IsRequired()
                     .HasMaxLength(60)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
 
                 entity.Property(e => e.DescripciondelEvento)
                     .IsRequired()
                     .HasMaxLength(600)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
 
                 entity.Property(e => e.FechadelEvento)
+                    .IsRequired()
                     .HasMaxLength(60)
                     .IsUnicode(false);
 
                 entity.Property(e => e.NdpersonasRequeridas)
+                    .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
                 entity.Property(e => e.NombredelEvento)
                     .IsRequired()
                     .HasMaxLength(600)
-                    .IsFixedLength(true);
-                    
-                entity.Property(e => e.IdEventos).ValueGeneratedOnAdd();
-
-                entity.Property(e => e.Patrocinadores)
-                    .IsRequired()
-                    .HasMaxLength(60)
-                    .IsFixedLength(true);
-
-                entity.Property(e => e.UbicaciondelEvento)
-                    .IsRequired()
-                    .HasMaxLength(60)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Poi>(entity =>
             {
                 entity.HasKey(e => e.IdPois)
-                    .HasName("PK__POIS__F8DD6C322523C378");
+                    .HasName("PK__Pois");
 
                 entity.ToTable("Poi");
 
                 entity.Property(e => e.Caracteristicas)
                     .IsRequired()
                     .HasMaxLength(200)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Descripcion)
                     .IsRequired()
                     .HasMaxLength(600)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Fecha)
                     .IsRequired()
                     .HasMaxLength(60)
-                    .IsFixedLength(true);
-                                    
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Hora)
                     .IsRequired()
                     .HasMaxLength(60)
-                    .IsFixedLength(true);
-
-                entity.Property(e => e.IdPois).ValueGeneratedOnAdd();
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
                     .HasMaxLength(60)
-                    .IsFixedLength(true);
-
-                entity.Property(e => e.Ubicacion)
-                    .IsRequired()
-                    .HasMaxLength(60)
-                    .IsFixedLength(true);
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

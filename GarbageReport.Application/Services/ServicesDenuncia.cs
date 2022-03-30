@@ -44,13 +44,7 @@ namespace GarbageReport.Application.Services
             if(string.IsNullOrEmpty(denuncia.MotivodeDenuncia))
                 return false;
 
-            if(string.IsNullOrEmpty(denuncia.DescripciondeSituacion))
-                return false;
-
             if(string.IsNullOrEmpty(denuncia.UbicaciondeDenuncia))
-                return false;
-
-            if(string.IsNullOrEmpty(denuncia.ColoniadelEvento))
                 return false;
 
             if(string.IsNullOrEmpty(denuncia.FotografiadelLugar))

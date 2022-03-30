@@ -15,5 +15,6 @@ namespace GarbageReport.Domain.interfaces
 
         Task<bool> Update(int id, Denuncia denuncia);
         Task<Denuncia> PorID (int id);
+        void EliminarDenuncia(int id);
     }
 }

@@ -21,18 +21,8 @@ namespace GarbageReport.Application.Services
             if(string.IsNullOrEmpty(evento.FechadelEvento))
                 return false;
 
-            if(string.IsNullOrEmpty(evento.UbicaciondelEvento))
-                return false;
-
             if(string.IsNullOrEmpty(evento.NdpersonasRequeridas))
                 return false;
-
-            if(string.IsNullOrEmpty(evento.CaracteristicasdelEvento))
-                return false;
-
-            if(string.IsNullOrEmpty(evento.Patrocinadores))
-                return false;
-
             if(string.IsNullOrEmpty(evento.ConsideracionesEspeciales))
                 return false;
 
@@ -52,17 +42,7 @@ namespace GarbageReport.Application.Services
 
             if(string.IsNullOrEmpty(evento.FechadelEvento))
                 return false;
-
-            if(string.IsNullOrEmpty(evento.UbicaciondelEvento))
-                return false;
-
             if(string.IsNullOrEmpty(evento.NdpersonasRequeridas))
-                return false;
-
-            if(string.IsNullOrEmpty(evento.CaracteristicasdelEvento))
-                return false;
-
-            if(string.IsNullOrEmpty(evento.Patrocinadores))
                 return false;
 
             if(string.IsNullOrEmpty(evento.ConsideracionesEspeciales))

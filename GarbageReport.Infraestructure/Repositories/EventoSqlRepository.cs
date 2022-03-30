@@ -52,18 +52,26 @@ namespace GarbageReport.Infraestructure.Repositories
 
             entity.NombredelEvento = evento.NombredelEvento;
             entity.DescripciondelEvento = evento.DescripciondelEvento;
-            entity.FechadelEvento = evento.FechadelEvento;
-            entity.UbicaciondelEvento = evento.UbicaciondelEvento;
-            entity.NdpersonasRequeridas = evento.NdpersonasRequeridas;
-            entity.CaracteristicasdelEvento = evento.CaracteristicasdelEvento;
-            entity.Patrocinadores = evento.Patrocinadores;
             entity.ConsideracionesEspeciales = evento.ConsideracionesEspeciales;
+            entity.FechadelEvento = evento.FechadelEvento;
+            entity.NdpersonasRequeridas = evento.NdpersonasRequeridas;
 
             _context.Update(entity);
 
             var rows = await _context.SaveChangesAsync();
             
             return rows > 0;
+        }
+
+        public void EliminarEvento(int id)
+        {
+            var Eliminar = _context.Eventos.FirstOrDefault(i => i.IdEventos == id);
+
+            if(Eliminar!=null)
+            {
+                _context.Eventos.Remove(Eliminar);
+                _context.SaveChanges();
+            }
         }
     }
 }

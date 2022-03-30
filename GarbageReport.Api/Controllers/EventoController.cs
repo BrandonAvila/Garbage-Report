@@ -92,7 +92,7 @@ namespace GarbageReport.Api.Controllers
             if(!updated)
                 Conflict("Ocurrio un fallo al intentar actualizar el evento.");
             
-            return NoContent();
+            return Ok(evento);
         }
 
         [HttpPost]
@@ -116,7 +116,16 @@ namespace GarbageReport.Api.Controllers
 
             var host = _httpContext.HttpContext.Request.Host.Value;
             var urlResult = $"https://{host}/api/Eventos/{id}";
-            return Created(urlResult, id);
+            return Ok(evento);
+        }
+
+        [HttpDelete]
+        [Route("EliminarEvento/{id:int}")]
+        public IActionResult EliminarEvento(int id)
+        {
+            _repository.EliminarEvento(id);
+
+            return NoContent();
         }
     }
 }

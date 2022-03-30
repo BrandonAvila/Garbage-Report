@@ -15,8 +15,7 @@ namespace GarbageReport.Application.Mappings
         {
             CreateMap<Evento, EventoResponses>()
 
-            .ForMember(dest => dest.InfoEvento, opt => opt.MapFrom(src => $"El evento: {src.NombredelEvento} se registro en la siguiente fecha {src.FechadelEvento}"))
-            .ForMember(dest => dest.LugardelEvento, opt => opt.MapFrom(src => $"Ubicado en: {src.UbicaciondelEvento} el cual seera patrocinado por: {src.Patrocinadores}"));
+            .ForMember(dest => dest.InfoEvento, opt => opt.MapFrom(src => $"El evento: {src.NombredelEvento} se registro en la siguiente fecha {src.FechadelEvento}"));
 
             CreateMap<EventoCreateRequest, Evento>();
         }

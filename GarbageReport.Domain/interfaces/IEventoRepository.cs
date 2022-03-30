@@ -13,5 +13,6 @@ namespace GarbageReport.Domain.interfaces
         Task<int> create (Evento evento);
         Task<Evento> PorID(int id);
         Task<bool> Update(int id, Evento evento);
+        void EliminarEvento(int id);
     }
 }

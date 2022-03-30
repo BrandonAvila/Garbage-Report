@@ -57,8 +57,8 @@ namespace GarbageReport.Api.Controllers
         {
             var eventos = await _repository.TodosLosDatos();
             //var RespuestaEventos = eventos.Select(et => CreateDtoFromObject(et));
-            var RespuestaEvento = _mapper.Map<IEnumerable<Evento>,IEnumerable<EventoResponses>>(eventos);
-            return Ok(RespuestaEvento);
+            // var RespuestaEvento = _mapper.Map<IEnumerable<Evento>,IEnumerable<EventoResponses>>(eventos);
+            return Ok(eventos);
         }
 
         [HttpGet]
@@ -69,8 +69,8 @@ namespace GarbageReport.Api.Controllers
             if(evento == null)
                 return NotFound("Lo sentimos, su evento no fue encontrado.");
 
-            var respuesta = _mapper.Map<Evento, EventoResponses>(evento);
-            return Ok(respuesta);
+                // var respuesta = _mapper.Map<Evento, EventoResponses>(evento);
+            return Ok(evento);
         }
 
         [HttpPut]
@@ -118,25 +118,5 @@ namespace GarbageReport.Api.Controllers
             var urlResult = $"https://{host}/api/Eventos/{id}";
             return Created(urlResult, id);
         }
-
-        #region"Request"
-        private Evento CreateObjectFromDto(EventoRequest dto)
-        {
-            var evento = new Evento {
-                IdEventos = 0,
-                NombredelEvento = string.Empty,
-                DescripciondelEvento = string.Empty,
-                FechadelEvento = string.Empty,
-                UbicaciondelEvento = string.Empty,
-                NdpersonasRequeridas = string.Empty,
-                CaracteristicasdelEvento = string.Empty,
-                Patrocinadores = string.Empty,
-                ConsideracionesEspeciales = string.Empty
-
-            };
-            return evento;
-        }
-        #endregion
-
     }
 }

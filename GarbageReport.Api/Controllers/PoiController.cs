@@ -64,8 +64,8 @@ namespace GarbageReport.Api.Controllers
         {
             var pois = await _repository.TodosLosDatos();
             //var Respuesta = Garbages.Select(g => CreateDtoFromObject(g));
-            var RespuestaPOI = _mapper.Map<IEnumerable<Poi>,IEnumerable<POIResponses>>(pois);
-            return Ok(RespuestaPOI);
+            // var RespuestaPOI = _mapper.Map<IEnumerable<Poi>,IEnumerable<POIResponses>>(pois);
+            return Ok(pois);
         } 
 
         [HttpGet]
@@ -77,9 +77,9 @@ namespace GarbageReport.Api.Controllers
             if(poi == null)
                 return NotFound("Lo sentimos, el poi no fue encontrado.");
 
-            var respuesta = _mapper.Map<Poi, POIResponses>(poi);
+            // var respuesta = _mapper.Map<Poi, POIResponses>(poi);
 
-            return Ok(respuesta);
+            return Ok(poi);
         }
 
         [HttpPost]
@@ -127,22 +127,6 @@ namespace GarbageReport.Api.Controllers
             
             return NoContent();
         }
-
-        #region"Request"
-        private Poi CreateObjectFromDto(POISRequest dto)
-        {
-            var poi = new Poi {
-                IdPois = 0,
-                Nombre = string.Empty,
-                Descripcion = string.Empty,
-                Ubicacion = string.Empty,
-                Fecha = string.Empty,
-                Caracteristicas = string.Empty
-
-            };
-            return poi;
-        }
-        #endregion
 
     }
 }

@@ -13,7 +13,7 @@ namespace GarbageReport.Domain.interfaces
         
         Task<int> create (Denuncia denuncia);
 
-        //Task<bool> Update(int id, Denuncia denuncia);
+        Task<bool> Update(int id, Denuncia denuncia);
         Task<Denuncia> PorID (int id);
     }
 }

@@ -61,9 +61,8 @@ namespace GarbageReport.Api.Controllers
         public async Task<IActionResult> TodosLosDatos()
         {
             var denuncias = await _repository.TodosLosDatos();
-            //var RespuestaDenuncia = denuncias.Select(g => CreateDtoFromObject(g));
-            var RespuestaDenuncia = _mapper.Map<IEnumerable<Denuncia>,IEnumerable<DenunciaResponses>>(denuncias);
-            return Ok(RespuestaDenuncia);
+            // var RespuestaDenuncia = _mapper.Map<IEnumerable<Denuncia>,IEnumerable<DenunciaResponses>>(denuncias);
+            return Ok(denuncias);
         }
 
         [HttpGet]
@@ -75,12 +74,12 @@ namespace GarbageReport.Api.Controllers
             if(denuncia == null)
                 return NotFound("Lo sentimos, su denuncia no fue encontrada.");
 
-            var respuesta = _mapper.Map<Denuncia, DenunciaResponses>(denuncia);
+            // var respuesta = _mapper.Map<Denuncia, DenunciaResponses>(denuncia);
 
-            return Ok(respuesta);
+            return Ok(denuncia);
         }
 
-        /*[HttpPut]
+        [HttpPut]
         [Route("{id:int}")]
         public async Task<IActionResult> Update (int id,[FromBody]Denuncia denuncia)
         {
@@ -100,7 +99,7 @@ namespace GarbageReport.Api.Controllers
                 Conflict("Ocurrio un fallo al intentar actualizar la denuncia.");
             
             return NoContent();
-        }*/
+        }
 
         [HttpPost]
         
@@ -125,23 +124,6 @@ namespace GarbageReport.Api.Controllers
             var urlResult = $"https://{host}/api/Denuncias/{id}";
             return Created(urlResult, id);
         }
-
-        #region"Request"
-        private Denuncia CreateObjectFromDto(DenunciasRequest dto)
-        {
-            var denuncia = new Denuncia {
-                IdDenuncia = 0,
-                FechadeDenuncia = string.Empty,
-                MotivodeDenuncia = string.Empty,
-                DescripciondeSituacion = string.Empty,
-                UbicaciondeDenuncia = string.Empty,
-                ColoniadelEvento = string.Empty,
-                FotografiadelLugar = string.Empty
-
-            };
-            return denuncia;
-        }
-        #endregion
     }
 
 }

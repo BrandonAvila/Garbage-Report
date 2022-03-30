@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZR0aIEHklQMC6RQ9xPrg0Kd12QR+qcNjFbaSZDesiYe4+vmhoR+Zn8cPnNU2QQUgcUDnz/l0C41rXnZSrcSOag==",
+  "dgSpecHash": "qTzUcby8u01uaghLRvIpgrJkhuipXuWDWAENV/eVXRlQjSbhKnOD5wzTrplNTYOhXRQJaHrmmD3zmADXHV3ZRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.infraestructure\\GarbageReport.infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Tareas\\APWOS\\Parcial\\Garbage-Report\\GarbageReport.Infraestructure\\GarbageReport.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

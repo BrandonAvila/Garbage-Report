@@ -1618,7 +1618,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "FluentValidation": "10.3.5",
           "GarbageReport.Domain": "1.0.0",
-          "GarbageReport.infraestructure": "1.0.0",
+          "GarbageReport.Infraestructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
         },
@@ -1645,7 +1645,7 @@
           "bin/placeholder/GarbageReport.Domain.dll": {}
         }
       },
-      "GarbageReport.infraestructure/1.0.0": {
+      "GarbageReport.Infraestructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1656,10 +1656,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
         },
         "compile": {
-          "bin/placeholder/GarbageReport.infraestructure.dll": {}
+          "bin/placeholder/GarbageReport.Infraestructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GarbageReport.infraestructure.dll": {}
+          "bin/placeholder/GarbageReport.Infraestructure.dll": {}
         }
       }
     }
@@ -6091,10 +6091,10 @@
       "path": "../GarbageReport.Domain/GarbageReport.Domain.csproj",
       "msbuildProject": "../GarbageReport.Domain/GarbageReport.Domain.csproj"
     },
-    "GarbageReport.infraestructure/1.0.0": {
+    "GarbageReport.Infraestructure/1.0.0": {
       "type": "project",
-      "path": "../GarbageReport.infraestructure/GarbageReport.infraestructure.csproj",
-      "msbuildProject": "../GarbageReport.infraestructure/GarbageReport.infraestructure.csproj"
+      "path": "../GarbageReport.Infraestructure/GarbageReport.Infraestructure.csproj",
+      "msbuildProject": "../GarbageReport.Infraestructure/GarbageReport.Infraestructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
